@@ -1,0 +1,94 @@
+<?xml version="1.0"?>
+<!-- Ivanti Automation Building Blocks -->
+<!-- Created by win-aasd768msdf\daniel belu on 4/28/2021 1:37:05 PM -->
+<AutomationManager>
+	<buildingblock version="3.0" bbpwh="tDn4wIEWwrDOE9oGoZitbw==:20000:mZFRHjspIEphu4vHYg16bvEQaWRZAZk44r/Hsm76HrU=">
+		<projects/>
+		<modules>
+			<module>
+				<properties>
+					<guid>{66FACE86-272E-4073-9F32-C08BD4C2A5CD}</guid>
+					<name>Download 137.0 MB in 1 file(s)</name>
+					<enabled>yes</enabled>
+					<description/>
+					<version>1.0.4</version>
+					<versioncomment>Updated version</versioncomment>
+					<properties>
+						<separators/>
+					</properties>
+					<folderpath>
+						<folder>
+							<name>Big modules</name>
+							<description/>
+							<guid>{B7F94C9E-62F1-413A-A8D7-D8884E0BECFE}</guid>
+						</folder>
+					</folderpath>
+					<deleteusedresources>yes</deleteusedresources>
+				</properties>
+				<tasks>
+					<task hidden="yes">
+						<limitinvoke>no</limitinvoke>
+						<parameters/>
+						<conditions>
+							<condition guid="{59843588-350B-43E1-8510-9A9A0551C313}">
+								<expressions/>
+								<operator>AND</operator>
+								<actiontrue>3</actiontrue>
+								<when>0</when>
+								<action>3</action>
+								<enabled>yes</enabled>
+							</condition>
+						</conditions>
+						<variablescontainer></variablescontainer>
+					</task>
+					<task>
+						<properties>
+							<type>DOWNLOAD</type>
+							<guid>{59843588-350B-43E1-8510-9A9A0551C313}</guid>
+							<description>Download 137.0 MB in 1 file(s)</description>
+							<enabled>yes</enabled>
+							<comments/>
+							<onerror>fail</onerror>
+						</properties>
+						<settings>
+							<ysnlog>no</ysnlog>
+							<resources>{ECA73957-FAA8-4FBA-93FC-75FA5B4017A7}</resources>
+							<destination/>
+							<ysndestination>no</ysndestination>
+						</settings>
+					</task>
+				</tasks>
+			</module>
+		</modules>
+		<resources crc32="9DEE31D0">
+			<resource>
+				<properties>
+					<guid>{ECA73957-FAA8-4FBA-93FC-75FA5B4017A7}</guid>
+					<version>1.0.6</version>
+					<versioncomment>Updated version</versioncomment>
+					<type>DATABASE</type>
+					<file>ndp48-devpack-enu.exe</file>
+					<parsefilecontent>no</parsefilecontent>
+					<skipenvironmentvariables>no</skipenvironmentvariables>
+					<comment/>
+					<enabled>yes</enabled>
+					<crc32>DE202B6E</crc32>
+					<folderpath>
+						<folder>
+							<name>Big resources</name>
+							<description/>
+							<guid>{10675C10-FCCC-4D2C-9218-D9734B73B026}</guid>
+						</folder>
+					</folderpath>
+				</properties>
+			</resource>
+		</resources>
+		<runbooks/>
+		<teams/>
+		<projectfolders/>
+		<modulefolders/>
+		<resourcefolders/>
+		<runbookfolders/>
+		<teamfolders/>
+	</buildingblock>
+</AutomationManager>
