@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
 <!-- Ivanti Automation Building Blocks -->
-<!-- Created by win-aasd768msdf\daniel belu on 4/28/2021 1:41:50 PM -->
+<!-- Created by win-aasd768msdf\daniel belu on 4/28/2021 1:42:30 PM -->
 <AutomationManager>
-	<buildingblock version="3.0" bbpwh="QKYXZdZWoNDr9fKilvwIAg==:20000:SLZOxhDip5tmglrAAIST5YX2yLhWqQUModZg79puU10=">
+	<buildingblock version="3.0" bbpwh="R+8jHJsqqHtST8xLtPkIxA==:20000:A8ZWAfjCy41WU/S5z1F5u7ZfjyJ8nL7phZbidbTniRU=">
 		<projects/>
 		<modules>
 			<module>
@@ -32,14 +32,6 @@
 								<action>3</action>
 								<enabled>yes</enabled>
 							</condition>
-							<condition guid="{F9EE0A4D-9EB0-4E51-A44E-9D5916D604D6}">
-								<expressions/>
-								<operator>AND</operator>
-								<actiontrue>3</actiontrue>
-								<when>0</when>
-								<action>3</action>
-								<enabled>yes</enabled>
-							</condition>
 						</conditions>
 						<variablescontainer></variablescontainer>
 					</task>
@@ -47,34 +39,6 @@
 						<properties>
 							<type>QSECURITY</type>
 							<guid>{EEF9E57F-B792-46A0-A505-8AA44615591B}</guid>
-							<description>Query NTFS File/Folder Permissions</description>
-							<enabled>yes</enabled>
-							<comments/>
-							<onerror>resume</onerror>
-						</properties>
-						<settings>
-							<queryntfs>yes</queryntfs>
-							<ntfs>C:\Users\Daniel Belu\Documents</ntfs>
-							<fileextensionfilter>no</fileextensionfilter>
-							<fileextension/>
-							<scanexplicitntfs>no</scanexplicitntfs>
-							<limitfolders>no</limitfolders>
-							<limitfolderlevel/>
-							<queryshare>no</queryshare>
-							<share/>
-							<queryprinter>no</queryprinter>
-							<printer/>
-							<queryregistry>no</queryregistry>
-							<registry/>
-							<scanexplicitregistry>no</scanexplicitregistry>
-							<limitsubkeys>no</limitsubkeys>
-							<limitsubkeylevel/>
-						</settings>
-					</task>
-					<task>
-						<properties>
-							<type>QSECURITY</type>
-							<guid>{F9EE0A4D-9EB0-4E51-A44E-9D5916D604D6}</guid>
 							<description>Query NTFS File/Folder Permissions</description>
 							<enabled>yes</enabled>
 							<comments/>
