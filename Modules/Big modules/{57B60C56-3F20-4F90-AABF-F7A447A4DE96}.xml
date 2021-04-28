@@ -1,0 +1,78 @@
+<?xml version="1.0"?>
+<!-- Ivanti Automation Building Blocks -->
+<!-- Created by win-aasd768msdf\daniel belu on 4/28/2021 1:13:07 PM -->
+<AutomationManager>
+	<buildingblock version="3.0" bbpwh="d5xHECMNpHM3vzYSLXX2yA==:20000:olrdZxPQuoHidpHi2Oj7UNAeGzEIfYfxFsJa4/KWju0=">
+		<projects/>
+		<modules>
+			<module>
+				<properties>
+					<guid>{57B60C56-3F20-4F90-AABF-F7A447A4DE96}</guid>
+					<name>Query NTFS File/Folder Permissions</name>
+					<enabled>yes</enabled>
+					<description/>
+					<version>1.0.2</version>
+					<versioncomment>Updated version</versioncomment>
+					<properties>
+						<separators/>
+					</properties>
+					<folderpath/>
+					<deleteusedresources>yes</deleteusedresources>
+				</properties>
+				<tasks>
+					<task hidden="yes">
+						<limitinvoke>no</limitinvoke>
+						<parameters/>
+						<conditions>
+							<condition guid="{EEF9E57F-B792-46A0-A505-8AA44615591B}">
+								<expressions/>
+								<operator>AND</operator>
+								<actiontrue>3</actiontrue>
+								<when>0</when>
+								<action>3</action>
+								<enabled>yes</enabled>
+							</condition>
+						</conditions>
+						<variablescontainer></variablescontainer>
+					</task>
+					<task>
+						<properties>
+							<type>QSECURITY</type>
+							<guid>{EEF9E57F-B792-46A0-A505-8AA44615591B}</guid>
+							<description>Query NTFS File/Folder Permissions</description>
+							<enabled>yes</enabled>
+							<comments/>
+							<onerror>resume</onerror>
+						</properties>
+						<settings>
+							<queryntfs>yes</queryntfs>
+							<ntfs>C:\Users\Daniel Belu\Documents</ntfs>
+							<fileextensionfilter>no</fileextensionfilter>
+							<fileextension/>
+							<scanexplicitntfs>no</scanexplicitntfs>
+							<limitfolders>no</limitfolders>
+							<limitfolderlevel/>
+							<queryshare>no</queryshare>
+							<share/>
+							<queryprinter>no</queryprinter>
+							<printer/>
+							<queryregistry>no</queryregistry>
+							<registry/>
+							<scanexplicitregistry>no</scanexplicitregistry>
+							<limitsubkeys>no</limitsubkeys>
+							<limitsubkeylevel/>
+						</settings>
+					</task>
+				</tasks>
+			</module>
+		</modules>
+		<resources/>
+		<runbooks/>
+		<teams/>
+		<projectfolders/>
+		<modulefolders/>
+		<resourcefolders/>
+		<runbookfolders/>
+		<teamfolders/>
+	</buildingblock>
+</AutomationManager>
