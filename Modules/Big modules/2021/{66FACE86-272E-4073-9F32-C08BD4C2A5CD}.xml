@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
 <!-- Ivanti Automation Building Blocks -->
-<!-- Created by win-aasd768msdf\daniel belu on 4/28/2021 1:37:05 PM -->
+<!-- Created by win-aasd768msdf\daniel belu on 4/28/2021 3:26:18 PM -->
 <AutomationManager>
-	<buildingblock version="3.0" bbpwh="tDn4wIEWwrDOE9oGoZitbw==:20000:mZFRHjspIEphu4vHYg16bvEQaWRZAZk44r/Hsm76HrU=">
+	<buildingblock version="3.0" bbpwh="P+zVUluz081U9UiFViiDbw==:20000:8JXT2xv1QUaFa1DUk8mUB1fYz1w3OU6fsaEsNuc0BDk=">
 		<projects/>
 		<modules>
 			<module>
@@ -11,7 +11,7 @@
 					<name>Download 137.0 MB in 1 file(s)</name>
 					<enabled>yes</enabled>
 					<description/>
-					<version>1.0.4</version>
+					<version>1.0.5</version>
 					<versioncomment>Updated version</versioncomment>
 					<properties>
 						<separators/>
@@ -38,6 +38,14 @@
 								<action>3</action>
 								<enabled>yes</enabled>
 							</condition>
+							<condition guid="{9186BC89-8BEB-4D93-B5CD-8325FCE2E275}">
+								<expressions/>
+								<operator>AND</operator>
+								<actiontrue>3</actiontrue>
+								<when>0</when>
+								<action>3</action>
+								<enabled>yes</enabled>
+							</condition>
 						</conditions>
 						<variablescontainer></variablescontainer>
 					</task>
@@ -57,10 +65,38 @@
 							<ysndestination>no</ysndestination>
 						</settings>
 					</task>
+					<task>
+						<properties>
+							<type>QREGISTRY</type>
+							<guid>{9186BC89-8BEB-4D93-B5CD-8325FCE2E275}</guid>
+							<description>Query Registry Settings</description>
+							<enabled>yes</enabled>
+							<comments/>
+							<onerror>resume</onerror>
+						</properties>
+						<settings>
+							<item queryallkeys="true">
+								<key>HKEY_LOCAL_MACHINE\SOFTWARE</key>
+							</item>
+						</settings>
+						<evaluators>
+							<evaluator>
+								<expressions/>
+								<operator>AND</operator>
+								<true>
+									<action>0</action>
+								</true>
+								<false>
+									<action>0</action>
+								</false>
+								<enabled>yes</enabled>
+							</evaluator>
+						</evaluators>
+					</task>
 				</tasks>
 			</module>
 		</modules>
-		<resources crc32="9DEE31D0">
+		<resources crc32="47C71B62">
 			<resource>
 				<properties>
 					<guid>{ECA73957-FAA8-4FBA-93FC-75FA5B4017A7}</guid>
