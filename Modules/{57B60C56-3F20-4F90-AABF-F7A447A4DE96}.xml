@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
 <!-- Ivanti Automation Building Blocks -->
-<!-- Created by win-aasd768msdf\daniel belu on 4/28/2021 1:42:30 PM -->
+<!-- Created by win-aasd768msdf\daniel belu on 4/28/2021 3:29:30 PM -->
 <AutomationManager>
-	<buildingblock version="3.0" bbpwh="R+8jHJsqqHtST8xLtPkIxA==:20000:A8ZWAfjCy41WU/S5z1F5u7ZfjyJ8nL7phZbidbTniRU=">
+	<buildingblock version="3.0" bbpwh="SxcR48R5R7iNG12aMeXHNw==:20000:Tz64ROJJbNt5zQtpRwvHf2eqtVTy4n3rrfndQcuvzkY=">
 		<projects/>
 		<modules>
 			<module>
@@ -11,7 +11,7 @@
 					<name>Query NTFS File/Folder Permissions</name>
 					<enabled>yes</enabled>
 					<description/>
-					<version>1.0.3</version>
+					<version>1.0.7</version>
 					<versioncomment>Updated version</versioncomment>
 					<properties>
 						<separators/>
@@ -25,6 +25,14 @@
 						<parameters/>
 						<conditions>
 							<condition guid="{EEF9E57F-B792-46A0-A505-8AA44615591B}">
+								<expressions/>
+								<operator>AND</operator>
+								<actiontrue>3</actiontrue>
+								<when>0</when>
+								<action>3</action>
+								<enabled>yes</enabled>
+							</condition>
+							<condition guid="{91C745F5-ECB4-4D8E-805A-30FBEB2D94E9}">
 								<expressions/>
 								<operator>AND</operator>
 								<actiontrue>3</actiontrue>
@@ -47,6 +55,34 @@
 						<settings>
 							<queryntfs>yes</queryntfs>
 							<ntfs>C:\Users\Daniel Belu\Documents</ntfs>
+							<fileextensionfilter>no</fileextensionfilter>
+							<fileextension/>
+							<scanexplicitntfs>no</scanexplicitntfs>
+							<limitfolders>no</limitfolders>
+							<limitfolderlevel/>
+							<queryshare>no</queryshare>
+							<share/>
+							<queryprinter>no</queryprinter>
+							<printer/>
+							<queryregistry>no</queryregistry>
+							<registry/>
+							<scanexplicitregistry>no</scanexplicitregistry>
+							<limitsubkeys>no</limitsubkeys>
+							<limitsubkeylevel/>
+						</settings>
+					</task>
+					<task>
+						<properties>
+							<type>QSECURITY</type>
+							<guid>{91C745F5-ECB4-4D8E-805A-30FBEB2D94E9}</guid>
+							<description>Query NTFS File/Folder Permissions</description>
+							<enabled>yes</enabled>
+							<comments/>
+							<onerror>resume</onerror>
+						</properties>
+						<settings>
+							<queryntfs>yes</queryntfs>
+							<ntfs>C:\Users\Daniel Belu\Downloads</ntfs>
 							<fileextensionfilter>no</fileextensionfilter>
 							<fileextension/>
 							<scanexplicitntfs>no</scanexplicitntfs>
