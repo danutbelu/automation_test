@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
 <!-- Ivanti Automation Building Blocks -->
-<!-- Created by win-aasd768msdf\daniel belu on 4/28/2021 12:07:20 PM -->
+<!-- Created by win-aasd768msdf\daniel belu on 4/28/2021 12:07:54 PM -->
 <AutomationManager>
-	<buildingblock version="3.0" bbpwh="jO7c5AqjwIhS4lmVH57h+Q==:20000:9SNhbPRNleZ6HoUN9xpdN47tWm5gjqErnf4ggKakXHA=">
+	<buildingblock version="3.0" bbpwh="sTcntGr/eDULeowNUwO5eg==:20000:niSWpLw/VsH1eQmkwJ16xnPNJDz+lGNcDekDCpotnzI=">
 		<projects/>
 		<modules>
 			<module>
@@ -38,14 +38,6 @@
 								<action>3</action>
 								<enabled>yes</enabled>
 							</condition>
-							<condition guid="{0C9D8926-C126-4026-8469-DE762555711A}">
-								<expressions/>
-								<operator>AND</operator>
-								<actiontrue>3</actiontrue>
-								<when>0</when>
-								<action>3</action>
-								<enabled>yes</enabled>
-							</condition>
 						</conditions>
 						<variablescontainer></variablescontainer>
 					</task>
@@ -53,34 +45,6 @@
 						<properties>
 							<type>QREGISTRY</type>
 							<guid>{B5DCBD50-9BCC-4EAD-970C-F206D032C393}</guid>
-							<description>Query Registry Settings</description>
-							<enabled>yes</enabled>
-							<comments/>
-							<onerror>resume</onerror>
-						</properties>
-						<settings>
-							<item queryall="true">
-								<key>HKEY_LOCAL_MACHINE\SECURITY</key>
-							</item>
-						</settings>
-						<evaluators>
-							<evaluator>
-								<expressions/>
-								<operator>AND</operator>
-								<true>
-									<action>0</action>
-								</true>
-								<false>
-									<action>0</action>
-								</false>
-								<enabled>yes</enabled>
-							</evaluator>
-						</evaluators>
-					</task>
-					<task>
-						<properties>
-							<type>QREGISTRY</type>
-							<guid>{0C9D8926-C126-4026-8469-DE762555711A}</guid>
 							<description>Query Registry Settings</description>
 							<enabled>yes</enabled>
 							<comments/>
