@@ -1,0 +1,120 @@
+<?xml version="1.0"?>
+<!-- Ivanti Automation Building Blocks -->
+<!-- Created by win-aasd768msdf\daniel belu on 5/4/2021 9:30:21 AM -->
+<AutomationManager>
+	<buildingblock version="3.0" bbpwh="x/tfep6TTmiGeDV52Uk9pg==:20000:XQss13q8QG6BR5gXH9mHhMJuEpc2gUcYAiPazUtjQWk=">
+		<projects/>
+		<modules>
+			<module>
+				<properties>
+					<guid>{68C761BA-6217-4796-81CF-B942CA9D64C5}</guid>
+					<name>Query NTFS File/Folder Permissions</name>
+					<enabled>yes</enabled>
+					<description/>
+					<version>1.0.5</version>
+					<versioncomment>Updated version</versioncomment>
+					<properties>
+						<separators/>
+					</properties>
+					<folderpath>
+						<folder>
+							<name>Small modules</name>
+							<description/>
+							<guid>{53F81627-912A-4655-890F-759274BE7A64}</guid>
+						</folder>
+					</folderpath>
+					<deleteusedresources>yes</deleteusedresources>
+				</properties>
+				<tasks>
+					<task hidden="yes">
+						<limitinvoke>no</limitinvoke>
+						<parameters/>
+						<conditions>
+							<condition guid="{80B26F01-6880-424E-B5C0-4FFD8A951C8A}">
+								<expressions/>
+								<operator>AND</operator>
+								<actiontrue>3</actiontrue>
+								<when>0</when>
+								<action>3</action>
+								<enabled>yes</enabled>
+							</condition>
+							<condition guid="{0868D2EE-0AFA-4EC3-92B8-D0AB960C0B81}">
+								<expressions/>
+								<operator>AND</operator>
+								<actiontrue>3</actiontrue>
+								<when>0</when>
+								<action>3</action>
+								<enabled>yes</enabled>
+							</condition>
+						</conditions>
+						<variablescontainer></variablescontainer>
+					</task>
+					<task>
+						<properties>
+							<type>QSECURITY</type>
+							<guid>{80B26F01-6880-424E-B5C0-4FFD8A951C8A}</guid>
+							<description>Query NTFS File/Folder Permissions</description>
+							<enabled>yes</enabled>
+							<comments/>
+							<onerror>resume</onerror>
+						</properties>
+						<settings>
+							<queryntfs>yes</queryntfs>
+							<ntfs>C:\Users\Daniel Belu\Documents</ntfs>
+							<fileextensionfilter>no</fileextensionfilter>
+							<fileextension/>
+							<scanexplicitntfs>no</scanexplicitntfs>
+							<limitfolders>no</limitfolders>
+							<limitfolderlevel/>
+							<queryshare>no</queryshare>
+							<share/>
+							<queryprinter>no</queryprinter>
+							<printer/>
+							<queryregistry>no</queryregistry>
+							<registry/>
+							<scanexplicitregistry>no</scanexplicitregistry>
+							<limitsubkeys>no</limitsubkeys>
+							<limitsubkeylevel/>
+						</settings>
+					</task>
+					<task>
+						<properties>
+							<type>QSECURITY</type>
+							<guid>{0868D2EE-0AFA-4EC3-92B8-D0AB960C0B81}</guid>
+							<description>Query NTFS File/Folder Permissions</description>
+							<enabled>yes</enabled>
+							<comments/>
+							<onerror>resume</onerror>
+						</properties>
+						<settings>
+							<queryntfs>yes</queryntfs>
+							<ntfs>C:\Users\Daniel Belu\Documents</ntfs>
+							<fileextensionfilter>no</fileextensionfilter>
+							<fileextension/>
+							<scanexplicitntfs>no</scanexplicitntfs>
+							<limitfolders>no</limitfolders>
+							<limitfolderlevel/>
+							<queryshare>no</queryshare>
+							<share/>
+							<queryprinter>no</queryprinter>
+							<printer/>
+							<queryregistry>no</queryregistry>
+							<registry/>
+							<scanexplicitregistry>no</scanexplicitregistry>
+							<limitsubkeys>no</limitsubkeys>
+							<limitsubkeylevel/>
+						</settings>
+					</task>
+				</tasks>
+			</module>
+		</modules>
+		<resources/>
+		<runbooks/>
+		<teams/>
+		<projectfolders/>
+		<modulefolders/>
+		<resourcefolders/>
+		<runbookfolders/>
+		<teamfolders/>
+	</buildingblock>
+</AutomationManager>
